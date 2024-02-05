@@ -83,7 +83,7 @@
                 success: function(res) { // 요청이 성공했을 때 동작할 코드
                     console.log(res);
                     if(res != '') {
-                        location.reload();
+                        location.reload();  // 페이지를 새로 고침
                     }
                 }
             })

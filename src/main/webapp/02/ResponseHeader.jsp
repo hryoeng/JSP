@@ -5,8 +5,8 @@
 <%
     // 응답헤더 정보 추가용 메소드
     // add:새로 추가 set:기존값 수정할 때
-    // 응답헤더에 추가할 값 준비
 
+    // 응답헤더에 추가할 값 준비
     SimpleDateFormat sd = new SimpleDateFormat("yyyy-MM-dd HH:mm");
     long add_date = sd.parse(request.getParameter("add_date")).getTime();
     int add_int = Integer.parseInt(request.getParameter("add_int"));
