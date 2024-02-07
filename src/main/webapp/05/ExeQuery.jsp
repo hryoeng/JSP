@@ -1,6 +1,6 @@
 <%@ page import="com.common.JDBCConnect" %>
-<%@ page import="java.sql.Statement" %>
 <%@ page import="java.sql.ResultSet" %>
+<%@ page import="java.sql.Statement" %>
 <%@ page import="java.sql.Date" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>

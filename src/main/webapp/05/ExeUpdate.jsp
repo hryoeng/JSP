@@ -12,12 +12,12 @@
     JDBCConnect jdbc = new JDBCConnect();
 
     // 테스트용 입력값
-    String id = "test1";
+    String id = "test2";
     String pass = "1234";
     String name = "테스트1";
 
     // 쿼리문 생성
-    String sql = "INSERT INTO scott.member_jsp VALUES(?,?,?,sysdate)";
+    String sql = "INSERT INTO scott.member_jsp (id,pass,name,regidate) VALUES(?,?,?,sysdate)";
     PreparedStatement psmt = jdbc.con.prepareStatement(sql);
 
     psmt.setString(1, id);

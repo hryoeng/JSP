@@ -11,6 +11,7 @@
     <%
         JDBCConnect jdbc1 = new JDBCConnect();
         jdbc1.close();
+        session.setMaxInactiveInterval(1200);  // 초단위
     %>
     <h2>JDBC 연결 테스트 파라미터1</h2>
     <%
