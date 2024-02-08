@@ -7,6 +7,9 @@ public class MemberDTO {
     private String name;
     private String regidate;
 
+    public MemberDTO() {
+    }
+
     public String getId() {
         return id;
     }
