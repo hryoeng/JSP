@@ -77,6 +77,7 @@ public class BoardDAO extends DBConnPool {
         List<BoardDTO> bbs = new ArrayList<BoardDTO>();
 
         // 쿼리문 작성
+        // 서브쿼리 SELECT절이 시작할 때마다 큰 따옴표로 각각 묶어줘야 한다.
         String query = "SELECT * FROM ("
                 + " SELECT Tb.*, ROWNUM rNum FROM ("
                 + " SELECT * FROM scott.board_jsp";
